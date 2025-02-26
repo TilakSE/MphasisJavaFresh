@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h2 class="text-center text-primary">{{ title }}</h2>
+
+  <!-- Bootstrap Form -->
+  <form class="card p-4 shadow-lg" (submit)="submitForm()">
+    <div class="mb-3">
+      <label class="form-label">Employee ID:</label>
+      <input type="number" class="form-control" [(ngModel)]="employeeId" name="employeeId" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Employee Name:</label>
+      <input type="text" class="form-control" [(ngModel)]="employeeName" name="employeeName" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Joining Date:</label>
+      <input type="date" class="form-control" [(ngModel)]="joinDate" name="joinDate" required>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Submit</button>
+  </form>
+</div>
