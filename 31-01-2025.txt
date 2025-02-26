@@ -1,0 +1,75 @@
+Emp. ID of Technician: 2611261 - Harsha
+Emp. ID of Technician: 2617428 - Arjun X
+
+1. git add file.txt
+
+2. git commit file.txt
+
+3. git config --global user.username "<yourFullName>" 
+   git config --global user.email "<yourEmail>"
+
+4. git push origin pathOfGitHub
+
+5. .git denotes git repository
+
+6. git log => can see about the project updates 
+
+7. git is a version control system which means each update is called as a version.
+
+8. git status => status of current working directory
+
+9. git commit --m "<Type your message here>"
+
+10. pull/push => server
+    add/commit => cache
+
+11. git branch => similar to pwd
+
+12. git branch <branchName> => creates a new branch
+
+13. git checkout <branchName> => to switch between branches
+
+14. git merge
+
+15. Eclipse:
+	1. File>new>maven project>next>next>groupid (reverse domain name)>artifactID
+
+16. package name => groupID.ArtifactID => example: com.mphasis.MyDemoProject
+
+17. git remote add origin
+
+18. steps in git bash:
+	1. git init
+	2. git status
+	3. git add .
+	4. git status
+	5. git config --global user.name ""     # username	# First time.
+	6. git config --global user.email ""   # email id	# First time.
+	7. git commit --m "Inital commit"
+	8. git log
+	9. git remote add origin ""     # copy paste the link of the code	# First time.
+	10. git push -u origin master 
+
+19. git rm -rf .........   # to delete 
+
+20. git commit --amend--author="<username> <yourmail>"   # to change the email
+
+21.git-scm.com/docs/pretty-formats    # User Manual for Git
+
+------------------------------------------------------------------------------------
+
+1. constraint dept_fk foreign key (dept_id) references department (dept_id)); // column level constraint.(added afterwards)
+
+2. create table FEE(
+  empId Integer,
+  fee Integer NOT NULL,
+  constraint eid_fk foreign key (empId) references EMPLOYEEDETAILS (empId));
+
+3. CREATE TABLE Books (
+    BookID INT PRIMARY KEY,
+    Title VARCHAR(255),
+    AuthorID INT,
+    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
+);
+
+4.
