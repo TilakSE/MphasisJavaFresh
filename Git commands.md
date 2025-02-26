@@ -54,9 +54,10 @@
        fee Integer NOT NULL,
        constraint eid_fk foreign key (empId) references EMPLOYEEDETAILS (empId)
    );
-3. CREATE TABLE Books (
-    BookID INT PRIMARY KEY,
-    Title VARCHAR(255),
-    AuthorID INT,
-    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
-);
+
+   CREATE TABLE Books (
+       BookID INT PRIMARY KEY,
+       Title VARCHAR(255),
+       AuthorID INT,
+       FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
+   );
