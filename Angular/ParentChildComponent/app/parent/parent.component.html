@@ -1,0 +1,9 @@
+  <div class="container mt-4">
+  <h2>Parent Component</h2>
+
+  <input type="text" [(ngModel)]="parentValue" class="form-control mb-3"/>  <!-- ✅ Two-way binding -->
+
+  <app-child [(childValue)]="parentValue"></app-child>  <!-- ✅ Binding with Child -->
+
+  <p class="mt-3">Parent Value: <strong>{{ parentValue }}</strong></p>
+</div>
